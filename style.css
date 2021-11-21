@@ -1,0 +1,142 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.5;
+	font-family: 'Mulish', sans-serif;
+}
+
+.hole {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 1000;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.card {
+	background: #fff;
+	border-radius: 5px;
+	padding: 12px;
+	font-size: 14px;
+	overflow: hidden;
+	position: relative;
+	transition: 0.4s;
+	width: 340px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 0;
+	transform: scale(0.9);
+	visibility: hidden;
+}
+
+.hole.show .card{
+	opacity: 1;
+	transform: scale(1);
+	visibility:visible;
+}
+
+.card p {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+button {
+	height: 40px;
+	width: auto;
+	padding: 8px 12px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: 0.4s;
+	background: transparent;
+	outline:  0;
+	border-radius: 40px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	width: 100%;
+	max-width: 240px;
+	margin: 5px 0;
+}
+
+button:hover {
+	transform: scale(0.9);
+}
+
+button.primary {
+	background: green;
+	color: #fff;
+}
+
+button.primary:active {
+    background: #fff;
+	color: green;
+	border-color: green;
+}
+
+button.secondry {
+	background: #fff;
+	color: green;
+	border-color: green;
+}
+button.secondry:active {
+	background: green;
+	color: #fff;
+	border-color: transparent;
+}
+
+.card .close {
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	font-size: 22px;
+	cursor: pointer;
+	transition: 0.3s;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+
+.card .close:hover {
+	transform: scale(1.2);
+}
+
+.card input {
+	height: 40px;
+	border-radius: 40px;
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid green;
+	outline: 0;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+
+.prompt p {
+	font-weight: 600px;
+	margin-bottom: 10px;
+}
