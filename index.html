@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Alert Popups</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <!-- Custom alerts  -->
+    <div class="hole alert">
+        <div class="card">
+            <div class="close">&times;</div>
+            <p>I m simple alert</p>
+            <button class="primary" type="button">Ok</button>
+        </div>
+    </div>
+    
+     
+    <!-- Custom confirm -->
+    <div class="hole confirm">
+        <div class="card">
+            <!-- <div class="close">&times;</div> -->
+            <p>I m simple confirm alert</p>
+            <button class="primary confirm-btn" type="button">Confirm</button>
+            <button class="secondry cancel-btn" type="button">Cancel</button>
+        </div>
+    </div>
+    
+
+    <!-- Custom prompt  -->
+    <div class="hole prompt">
+        <div class="card">
+            <div class="close">&times;</div>
+            <p>I m simple prompt alert</p>
+            <input type="text" class="input" placeholder="Enter value..." />
+            <button class="primary" type="button">Ok</button>
+        </div>
+    </div>
+
+
+    <!-- show alerts buttons -->
+    <div class="container">
+        <button class="primary alert-btn" type="button">Show alert</button>
+        <button class="primary confirm-alert-btn" type="button">Show confirm alert</button>
+        <button class="primary prompt-alert-btn" type="button">Show prompt alert</button>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
